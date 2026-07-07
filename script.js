@@ -11,6 +11,7 @@ fetch("https://fakestoreapi.com/products")
     console.log("\nTASK 2 - Display Products Name ");
     products.forEach((product) => {
       console.log(product.title);
+      console.log("\n");
     });
 
     console.log("\nTASK 3 - Display Products Below $100 ");
@@ -53,7 +54,6 @@ fetch("https://fakestoreapi.com/products")
       if (product.title.toLowerCase().includes(search)) {
         console.log("Product : ", product.title);
         console.log("Price : $", product.price);
-        console.log("Category : ", product.category);
         console.log("");
         found = true;
       }
@@ -156,7 +156,6 @@ fetch("https://fakestoreapi.com/products")
       } else {
         console.log("Description : ", product.description);
       }
-
       console.log("");
     });
 

@@ -1,6 +1,6 @@
 let allProducts = [];
 
-fetch("https://fakestoreapi.com/product")
+fetch("https://fakestoreapi.com/products")
   .then((response) => {
     return response.json();
   })
